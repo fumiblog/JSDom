@@ -1,13 +1,36 @@
 'use strict'
 {
-  //6.要素の属性を操作してみよう
+  //10.要素を追加してみよう
   document.querySelector('button').addEventListener('click', () => {
-    const targetNode = document.getElementById('target');
-    targetNode.textContent = "Changed!";
-    targetNode.title = "This is title!";
-    targetNode.style.backgroundColor = "skyblue";
-    targetNode.style.color = "red";
+    const item2 = document.createElement('li');
+    item2.textContent = 'item 2';
+    const ul = document.querySelector('ul');
+    ul.appendChild(item2);
   });
+
+  //9.カスタムデータ属性を扱ってみよう
+  // document.querySelector('button').addEventListener('click', () => {
+  //   const targetNode = document.getElementById('target');
+  // targetNode.textContent = 'Dotinstall!';
+  // targetNode.textContent = targetNode.dataset.translation;
+  // });
+  //8.classListを使ってみよう
+  // document.querySelector('button').addEventListener('click', () => {
+  //   const targetNode = document.getElementById('target');
+  // targetNode.classList.add('my-color');
+  // if (targetNode.classList.contains('my-color') === true) {
+  //   targetNode.classList.remove('my-color');
+  // } else {
+  //   targetNode.classList.add('my-color');
+  // }
+  //   targetNode.classList.toggle('my-color');
+  // });
+
+  //7.classNameを操作してみよう
+  // document.querySelector('button').addEventListener('click', () => {
+  //   const targetNode = document.getElementById('target');
+  //   targetNode.className = 'my-color my-border';
+  // });
 
   //5.addEventListener()を使ってみよう
   // document.querySelector('button').addEventListener('click', () => {
